@@ -72,7 +72,7 @@
   justify-content: space-between;
   padding: 8px 16px;
   margin-left: 10px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 700;
   color: #fff;
@@ -546,6 +546,7 @@ iframe {
   line-height: 1.2;
   text-align: center;
   padding-bottom: 44px;
+  text-transform: uppercase;
 }
 
 input.input1 {
