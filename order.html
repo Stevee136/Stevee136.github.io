@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>VrCodeX</title>
+
+     <!-- Favicons -->
+     <link href="img/perfect-logo-removebg-preview-removebg-preview.png" rel="shortcut icon" type="image/x-icon">
+
+    <!-- Icons font CSS-->
+    <link href="mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="boxicons/css/boxicons.min.css" rel="stylesheet">
+    
+    <!-- Vendor CSS-->
+    <link href="select2/select2.min.css" rel="stylesheet" media="all" id="important">
+ 
+    <!-- Main CSS-->
+    <link href="css/order.css" rel="stylesheet" media="all">
+
+    <style>
+        #important {
+            all: unset !important;
+        }
+        /* header {width: 100%;}
+        header a {text-decoration: none;}
+        .d-flex {display: flex;}
+        .fixed-top {position: fixed;}
+        .align-items-center {align-items: center;}
+        .justify-content-between {justify-content: space-between;}
+        .position-relative {position: relative;}
+        .logo {float: left;}
+        .navbar {float: right;} */
+
+        select, option {width: 100%;}
+    </style>
+</head>
+
+<body>
+
+
+	<!-- Pre loader -->
+	<div id="loader-wrapper">
+		<div id="loader"></div>
+		
+		<div class="loader-section section-left"></div>
+		<div class="loader-section section-right"></div>
+		
+	  </div>
+
+    <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-transparent">
+    <div class="container d-flex align-items-center justify-content-between position-relative">
+
+      <div class="logo">
+        <a href="index.html"><img src="img/VrCodeX.png" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav class="navbar" id="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">About Us</a></li>
+          <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="index.html#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="index.html#pricing">Pricing</a></li>
+          <li><a class="nav-link scrollto" href="index.html#faq">FAQ</a></li>
+		  <li><a class="nav-link scrollto" href="review.html">Review</a></li>
+          
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  <br><br>
+
+    <div class="page-wrapper bg-blue p-t-180 p-b-100 font-robo">
+        <div class="wrapper wrapper--w960">
+            <div class="card card-2">
+                <!-- <div class="card-heading"></div> -->
+                <div class="card-body">
+                    <h2 class="title">Order</h2>
+                    <form method="POST">
+                        <div class="input-group">
+                            <input class="input--style-2" type="text" placeholder="Name" name="name" required>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col2">
+                                <div class="input-group">
+                                    <input class="input--style-2" type="email" placeholder="Email" name="email" required> 
+                                </div>
+                            </div>
+                            <div class="col2">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="service" required>
+                                            <option disabled="disabled" selected="selected">Service</option>
+                                            <option>Web Development</option>
+                                            <option>Software</option>
+                                            <option>DevOps</option>
+                                            <option>Data Science</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col2">
+                                <div class="input-group">
+                                    <input class="input--style-2" type="text" placeholder="Contact Information" name="contact" required>
+                                </div>
+                            </div>
+                            <div class="col2">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="service" required>
+                                            <option disabled="disabled" selected="selected">Payment Method</option>
+                                            <option>Paypal</option>
+                                            <option>Bank Transfer</option>
+                                            <option>ApplePay</option>
+                                            <option>Credit Card</option>
+                                            <option>Venmo</option>
+                                            <option>MasterCard</option>
+                                            <option>Visa</option>
+                                            <option>GooglePay</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="input-group">
+                                <textarea class="input--style-2 input1" name="message" placeholder="Service Description" required></textarea>
+                            </div><p>Payment is only required once the service is completed</p>
+                        </div>
+                        <div class="p-t-30">
+                            <button class="btn btn--radius btn--green" type="submit">Submit</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="select2/select2.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Main JS-->
+    <script>
+        (function ($) {
+    'use strict';
+    /*[ Select 2 Config ]
+        ===========================================================*/
+    
+    try {
+        var selectSimple = $('.js-select-simple');
+    
+        selectSimple.each(function () {
+            var that = $(this);
+            var selectBox = that.find('select');
+            var selectDropdown = that.find('.select-dropdown');
+            selectBox.select2({
+                dropdownParent: selectDropdown
+            });
+        });
+    
+    } catch (err) {
+        console.log(err);
+    }
+    
+
+})(jQuery);
+
+  // Set the minimum display time for the preloader (in milliseconds)
+  const minimumDisplayTime = 1000; // 1 seconds
+
+// Function to hide the preloader
+function hidePreloader() {
+	const loaderWrapper = document.getElementById('loader-wrapper');
+	const loader = document.getElementById('loader');
+
+	// Hide the loader and its wrapper
+	loader.style.opacity = 0;
+	loaderWrapper.style.visibility = 'hidden';
+	loaderWrapper.style.transform = 'translateY(-100%)';
+
+	// Add a 'loaded' class to the body to apply loaded styles
+	document.body.classList.add('loaded');
+}
+
+// Wait for the page to fully load
+window.addEventListener('load', function () {
+	// Calculate the time elapsed since the page started loading
+	const currentTime = new Date().getTime();
+	const timeElapsed = currentTime - window.performance.timing.navigationStart;
+
+	// Check if the minimum display time has passed
+	if (timeElapsed >= minimumDisplayTime) {
+		// If enough time has passed, hide the preloader immediately
+		hidePreloader();
+	} else {
+		// If not enough time has passed, set a timer to hide the preloader
+		setTimeout(hidePreloader, minimumDisplayTime - timeElapsed);
+	}
+});
+    </script>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
+<!-- end document-->

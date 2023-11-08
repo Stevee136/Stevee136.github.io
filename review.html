@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>VrCodeX</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Favicons -->
+	<link href="img/perfect-logo-removebg-preview-removebg-preview.png" rel="shortcut icon" type="image/x-icon">
+
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+	<link rel="stylesheet" type="text/css" href="css/review.css">
+
+</head>
+<body>
+
+	<!-- Pre loader -->
+	<div id="loader-wrapper">
+		<div id="loader"></div>
+		
+		<div class="loader-section section-left"></div>
+		<div class="loader-section section-right"></div>
+		
+	  </div>
+
+    <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-transparent">
+    <div class="container d-flex align-items-center justify-content-between position-relative">
+
+      <div class="logo">
+        <a href="index.html"><img src="img/VrCodeX.png" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav class="navbar" id="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">About Us</a></li>
+          <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="index.html#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="index.html#pricing">Pricing</a></li>
+          <li><a class="nav-link scrollto" href="index.html#faq">FAQ</a></li>
+		  <li><a class="nav-link scrollto active" href="review.html">Review</a></li>
+          
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  <br><br>
+
+	<div class="contact1">
+		<div class="container-contact1">
+			<div class="contact1-pic js-tilt" data-tilt>
+				<img src="img/img-01.png" alt="IMG">
+			</div>
+
+			<form class="contact1-form validate-form">
+				<span class="contact1-form-title">
+					<b>Make a review</b>
+				</span>
+
+				<div class="wrap-input1 validate-input" data-validate = "Name is required">
+					<input class="input1" type="text" placeholder="Name" required>
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input" data-validate = "Profession is required">
+					<input class="input1" type="text" placeholder="Profession" required>
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input" data-validate = "Contact details is required">
+					<input class="input1" type="text" placeholder="Contact Details" required>
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input" data-validate = "Review is required">
+					<textarea class="input1" name="message" placeholder="Review" required></textarea>
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="container-contact1-form-btn">
+					<button class="contact1-form-btn">
+						<span>
+							Submit
+							<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<script src="jquery/jquery-3.2.1.min.js"></script>
+	<script src="tilt/tilt.jquery.min.js"></script>
+	<script>
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+
+   // Set the minimum display time for the preloader (in milliseconds)
+   const minimumDisplayTime = 1000; // 1 seconds
+
+// Function to hide the preloader
+function hidePreloader() {
+	const loaderWrapper = document.getElementById('loader-wrapper');
+	const loader = document.getElementById('loader');
+
+	// Hide the loader and its wrapper
+	loader.style.opacity = 0;
+	loaderWrapper.style.visibility = 'hidden';
+	loaderWrapper.style.transform = 'translateY(-100%)';
+
+	// Add a 'loaded' class to the body to apply loaded styles
+	document.body.classList.add('loaded');
+}
+
+// Wait for the page to fully load
+window.addEventListener('load', function () {
+	// Calculate the time elapsed since the page started loading
+	const currentTime = new Date().getTime();
+	const timeElapsed = currentTime - window.performance.timing.navigationStart;
+
+	// Check if the minimum display time has passed
+	if (timeElapsed >= minimumDisplayTime) {
+		// If enough time has passed, hide the preloader immediately
+		hidePreloader();
+	} else {
+		// If not enough time has passed, set a timer to hide the preloader
+		setTimeout(hidePreloader, minimumDisplayTime - timeElapsed);
+	}
+});
+	</script>
+</body>
+</html>
